@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Nerko';
+    font-style: italic;
+    font-weight: 400;
+    src : url(../src/fonts/NerkoOne-Regular.ttf) format("truetype");
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -5,35 +12,203 @@
 }
 
 body {
-    background-color: #60a5fa ;
     height: 100vh;
     width: 100vw;
+    overflow-x: hidden;
 }
 
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.nav-container{
     width: 100%;
-    height: auto;
-    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 0.5rem 2rem;
+    overflow-x: hidden;
+    background-color: #020617;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 1rem;
+}
+.logo {
+    height: 5rem;
+}
+
+.logo-text{
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: white;
+    font-family: 'Nerko', sans-serif;
 }
 
 
 .homeBtn, .menuBtn, .aboutBtn {
-    padding: 20px 50px;
+    padding: 10px 30px;
     color: white;
-    background-color: #1e40af;
-    font-size: 24px;
+    font-size: 1.6rem;
     font-weight: 800;
+    font-family: 'Nerko', sans-serif;
     border: none;
+    background-color: #020617;
 }
 
-.container{
-    width: 100%;
-    height: 22rem;
+.account-btn {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    gap: 10px;
+}
+
+.login,.signUp {
+    padding: 10px 20px;
+    background-color:#0ea5e9;
+    border: none;
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'Nerko', sans-serif;
+    border-radius: 0.5rem;
+    font-weight: 600;
+}
+
+
+
+#content{
+
     background-color: white;
+}
+
+.container {
+    display: grid;
+    max-width: 100%;
+    height: 120vh;
+}
+
+.left-container, .right-container {
+    width: 100%;
+}
+.right-container {
+    display: grid;
+    justify-content: center;
+    align-items: start;
+}
+
+.left {
+    width: 100%;
+}
+
+.join-container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.joinBtn {
+    padding: 0.5rem 2.3rem;
+    font-size: 1.3rem;
+    background-color: #020617;
+    border: none;
+    font-family: "Nerko", sans-serif;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+
+
+.hero-text{
+    font-family: 'buhid';
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #020617;
+    color: white;
+    height: 5rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-family: 'Nerko', sans-serif;
+}
+
+
+
+/* menu */
+
+.menu-container{
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+    max-width: 100%;
+    height: 120vh;
+}
+
+.menu-title {
+    margin: 2.5rem;
+    font-family: "Nerko", sans-serif;
+    font-size: 3.5rem;
+}
+
+.cardContainer {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 400px));
+    grid-template-rows: repeat(auto-fill, minmax(300px, 400px)) ;
+    gap: 2rem;
+
+}
+
+.card {
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+    border:  1px solid black;
+    border-radius: 0.5rem;
+}
+
+.foodName {
+    font-size: 2.3rem;
+    text-align: center;
+    font-family: "Nerko",sans-serif;
+}
+
+
+.img-menu {
+    width: 100%;
+    height: 250px;
+    padding: 0px 2rem;
+}
+
+
+.buyBtn {
+    background-color:#020617;
+    color: white;
+    font-size: 2rem;
+    border: none;
+    font-family: 'Nerko',sans-serif;
+}
+
+
+/* about.js */
+
+.about-container{
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+    height: 40vw;
+}
+
+.about-text{
+    padding: 2rem;
+    font-family: "Nerko",sans-serif;
+    font-size: 2.8rem;
+}
+
+.about-info {
+    line-height: 2rem;
+    text-align: justify;
+}
+
+.context{
+    height: 100%;
+    padding: 0 5rem;
 }
